@@ -1,0 +1,124 @@
+/* Master Styles */
+
+body {
+    margin: 0px;  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Nav styles */
+
+.brand {
+    font-family: 'Cinzel', serif;
+}
+
+.nav-wrapper {
+display: flex;
+justify-content: space-between;
+padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper :hover {
+    border-bottom: 1px solid #161515;
+}
+
+.nav-link-wrapper a:hover {
+    color: #161515;
+}
+
+/* portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #474545;
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button:hover{
+    color: #161515;
+}
+
+/*About Page*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-image-wrapper img{
+    width:100%;
+}
+
+.about-content-wrapper {
+    padding: 30px;
+}
+
+.about-content-wrapper h1 {
+    padding: 10px;
+    color: #474545;
+    font-size: larger;
+}
+
+.about-content-wrapper p {
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+    color: #474545
+}
+
+@media (max-height: 800px) { 
+    p {
+      font-size: 10px;
+    }
+  }
